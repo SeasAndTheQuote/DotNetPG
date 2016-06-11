@@ -24,7 +24,7 @@ namespace zaliczenieNETPG
         {
             InitializeComponent();
 
-            foreach(var item in Enum.GetValues(typeof(weekdays)))
+            foreach(var item in Enum.GetValues(typeof(Container.weekdays)))
             {
                 weekbox.Items.Add(item);
             }
@@ -37,16 +37,7 @@ namespace zaliczenieNETPG
         
         
         
-        enum weekdays
-        {
-            Monday = 1,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday,
-            Sunday
-        }
+        
 
         enum activityTypes
         {

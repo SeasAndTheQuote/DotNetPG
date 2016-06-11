@@ -10,5 +10,16 @@ namespace zaliczenieNETPG
     {
         public static List<Weekday> activities = new List<Weekday>();
 
+        public enum weekdays
+        {
+            Monday = 0,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
     }
+
 }

@@ -28,6 +28,14 @@ namespace zaliczenieNETPG
             string todayDayOfTheWeek = todayDOW.ToString();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (Weekday x in Container.activities)
+            {
+                MessageBox.Show(x.name, "ERROR", MessageBoxButton.OK);
+            }
+        }
+
 
     }
 }

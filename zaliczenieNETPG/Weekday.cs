@@ -8,12 +8,11 @@ namespace zaliczenieNETPG
 {
     public abstract class Weekday
     {
-        protected string dayOfWeek;
-        protected string typeOfActivity;
-        protected string nameOfActivity;
+        private string dayOfWeek;
+        private string typeOfActivity;
+        private string nameOfActivity;
+
         protected int durationInMinutes;
-        protected int minutesLeftToday;
-        protected int secondsLeftToday = 0;
 
         public Weekday(string dayOfWeek, string typeOfActivity, string nameOfActivity, int durationInMinutes)
         {
@@ -21,16 +20,32 @@ namespace zaliczenieNETPG
             this.typeOfActivity = typeOfActivity;
             this.nameOfActivity = nameOfActivity;
             this.durationInMinutes = durationInMinutes;
-            this.minutesLeftToday = durationInMinutes;
         }
 
         public abstract bool validate();
 
-        public virtual void timeLeft(int minutes, int seconds)
+        public abstract void setTimeLeft(int minutes, int seconds);
+        public virtual string day
         {
-            this.minutesLeftToday = minutes;
-            this.secondsLeftToday = seconds;
+            get { return dayOfWeek; }
+            set { dayOfWeek = value; }
         }
+        public virtual string type
+        {
+            get { return typeOfActivity; }
+            set { typeOfActivity = value; }
+        }
+        public virtual string name
+        {
+            get { return nameOfActivity; }
+            set { nameOfActivity = value; }
+        }
+        public virtual int duration
+        {
+            get { return durationInMinutes; }
+            set { durationInMinutes = value; }
+        }
+
 
     }
 }

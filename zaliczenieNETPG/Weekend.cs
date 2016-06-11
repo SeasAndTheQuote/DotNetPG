@@ -8,42 +8,19 @@ namespace zaliczenieNETPG
 {
     public class Weekend : Weekday
     {
-        /*private string dayOfWeek;
-        private string typeOfActivity;
-        private string nameOfActivity;
-        private int durationInMinutes;
-        private int secondsLeftToday;
-        private int minutesLeftToday;*/
+
+        private int minutesLeftToday;
+        private int secondsLeftToday = 0;
+
         public Weekend(string dayOfWeek, string typeOfActivity, string nameOfActivity, int durationInMinutes) 
             : base(dayOfWeek, typeOfActivity, nameOfActivity, durationInMinutes)
+        {}
+
+        public override void setTimeLeft(int minutes, int seconds)
         {
-
+            this.minutesLeftToday = minutes;
+            this.secondsLeftToday = seconds;
         }
-
-        public string day
-        {
-            get { return dayOfWeek; }
-            set { dayOfWeek = value; }
-        }
-
-        public string type
-        {
-            get { return typeOfActivity; }
-            set { typeOfActivity = value; }
-        }
-
-        public string name
-        {
-            get { return nameOfActivity; }
-            set { nameOfActivity = value; }
-        }
-
-        public int duration
-        {
-            get { return durationInMinutes; }
-            set { durationInMinutes = value; }
-        }
-
         public override bool validate()
         {
             if (durationInMinutes >= 1440)

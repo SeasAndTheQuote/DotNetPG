@@ -12,14 +12,15 @@
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+
             <Label Content="Monday" Grid.Column="0" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Top" Width="93" FontSize="20" Height="37"/>
             <Label Content="Tuesday" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Top" Width="93" FontSize="20" Height="37"/>
             <Label Content="Wednesday" Grid.Column="2" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Top" Width="117" FontSize="20" Height="37"/>
@@ -31,14 +32,69 @@
 
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <ListView Name="List0" Grid.Column="0" HorizontalAlignment="Center" Height="265" Margin="10,0" VerticalAlignment="Top" Width="107" FontSize="15">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <ListView Name="List1" Grid.Column="1" HorizontalAlignment="Center" Height="265" Margin="10,0" VerticalAlignment="Top" Width="107" FontSize="15">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <ListView Name="List2" Grid.Column="2" HorizontalAlignment="Left" Height="265" VerticalAlignment="Top" Width="108" FontSize="15" Margin="10,0,0,0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <ListView Name="List3" Grid.Column="3" HorizontalAlignment="Center" Height="265" Margin="10,0" VerticalAlignment="Top" Width="108" FontSize="15">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <ListView Name="List4" Grid.Column="4" HorizontalAlignment="Center" Height="265" Margin="10,0" VerticalAlignment="Top" Width="108" FontSize="15">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <ListView Name="List5" Grid.Column="5" HorizontalAlignment="Center" Height="265" Margin="10,0" VerticalAlignment="Top" Width="108" FontSize="15">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <ListView Name="List6" Grid.Column="6" HorizontalAlignment="Center" Height="265" Margin="10,0" VerticalAlignment="Top" Width="108" FontSize="15">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
         </Grid>
         <Label Content="Weekly Agenda" HorizontalAlignment="Center" Margin="290,6,269,0" VerticalAlignment="Top" FontSize="44" Width="333"/>
         <Button Content="Return" HorizontalAlignment="Left" Margin="635,10,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="35" Width="232" Height="58" Click="Button_Click"/>
