@@ -8,17 +8,16 @@ namespace zaliczenieNETPG
 {
     public class Weekend : Weekday
     {
-        private string dayOfWeek;
+        /*private string dayOfWeek;
         private string typeOfActivity;
         private string nameOfActivity;
         private int durationInMinutes;
+        private int secondsLeftToday;
+        private int minutesLeftToday;*/
         public Weekend(string dayOfWeek, string typeOfActivity, string nameOfActivity, int durationInMinutes) 
             : base(dayOfWeek, typeOfActivity, nameOfActivity, durationInMinutes)
         {
-            this.dayOfWeek = dayOfWeek;
-            this.typeOfActivity = typeOfActivity;
-            this.nameOfActivity = nameOfActivity;
-            this.durationInMinutes = durationInMinutes;
+
         }
 
         public string day

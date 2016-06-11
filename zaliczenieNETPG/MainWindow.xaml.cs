@@ -45,5 +45,12 @@ namespace zaliczenieNETPG
             WeeklyAgenda agenda = new WeeklyAgenda();
             agenda.ShowDialog();
         }
+
+        private void StartToday(object sender, RoutedEventArgs e)
+        {
+            TodaysWork working = new TodaysWork();
+            working.Show();
+            this.Close();
+        }
     }
 }

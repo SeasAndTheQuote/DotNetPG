@@ -1,7 +1,7 @@
 ﻿<Window x:Class="zaliczenieNETPG.WeeklyAgenda"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="WeeklyAgenda" Height="500" Width="900">
+        Title="WeeklyAgenda" Height="500" Width="900" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>

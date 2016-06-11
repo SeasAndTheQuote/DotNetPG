@@ -54,6 +54,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Container.cs" />
+    <Compile Include="TodaysWork.xaml.cs">
+      <DependentUpon>TodaysWork.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Weekday.cs" />
     <Compile Include="Weekend.cs" />
     <Compile Include="WeeklyAgenda.xaml.cs">
@@ -86,6 +89,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TodaysWork.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WeeklyAgenda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

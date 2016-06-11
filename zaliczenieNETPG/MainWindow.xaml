@@ -11,22 +11,22 @@
                HorizontalAlignment="Center" 
                VerticalAlignment="Top" 
                Margin="146,35,146,0" 
-               FontSize="50" Width="400" Grid.ColumnSpan="2"/>
+               FontSize="50" Width="400" 
+               Grid.ColumnSpan="2"/>
 
         <Button Content="Add an event" 
                 HorizontalAlignment="Left" 
                 Margin="94,290,0,0" 
                 VerticalAlignment="Top" 
-                Width="193" 
-                Height="77" 
-                FontSize="25" Click="AddEvent"/>
+                Width="193" Height="77" 
+                FontSize="25" 
+                Click="AddEvent"/>
 
         <Button Content="See weekly &#xA;   agenda" 
         	    HorizontalAlignment="Left" 
         	    Margin="388,169,0,0" 
         	    VerticalAlignment="Top" 
-        	    Width="193" 
-        	    Height="77" 
+        	    Width="193" Height="77" 
         	    FontSize="25" 
                 Click="GoToWeek" 
                 Grid.ColumnSpan="2"/>
@@ -35,18 +35,18 @@
         	    HorizontalAlignment="Left" 
         	    Margin="388,290,0,0" 
         	    VerticalAlignment="Top" 
-        	    Width="193" 
-        	    Height="77" 
+        	    Width="193" Height="77" 
         	    FontSize="25" 
-                Click="Button_Click" Grid.ColumnSpan="2"/>
+                Click="Button_Click" 
+                Grid.ColumnSpan="2"/>
 
         <Button Content="Go to today" 
         	    HorizontalAlignment="Left" 
         	    Margin="94,169,0,0" 
         	    VerticalAlignment="Top" 
-        	    Width="193" 
-        	    Height="77" 
-        	    FontSize="25"/>
+        	    Width="193" Height="77" 
+        	    FontSize="25" 
+                Click="StartToday"/>
 
     </Grid>
 </Window>

@@ -9,17 +9,19 @@ namespace zaliczenieNETPG
     public class Workday : Weekday
     {
 
-        private string dayOfWeek;
+        /*private string dayOfWeek;
         private string typeOfActivity;
         private string nameOfActivity;
         private int durationInMinutes;
+        private int secondsLeftToday;
+        private int minutesLeftToday;*/
         public Workday(string dayOfWeek, string typeOfActivity, string nameOfActivity, int durationInMinutes) 
             : base(dayOfWeek, typeOfActivity, nameOfActivity, durationInMinutes)
         {
-            this.dayOfWeek = dayOfWeek;
+            /*this.dayOfWeek = dayOfWeek;
             this.typeOfActivity = typeOfActivity;
             this.nameOfActivity = nameOfActivity;
-            this.durationInMinutes = durationInMinutes;
+            this.durationInMinutes = durationInMinutes;*/
         }
 
         public string day
