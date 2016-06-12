@@ -24,36 +24,7 @@ namespace zaliczenieNETPG
         {
             InitializeComponent();
 
-            //testing
-            Weekend newDay = new Weekend("Saturday", "Outdoor", "Programowanko", 56);
-            Weekend newDay1 = new Weekend("Sunday", "Project", "Programowanko", 63);
-            Weekend newDay2 = new Weekend("Saturday", "Outdoor", "Bieganko", 56);
-            Weekend newDay3 = new Weekend("Sunday", "Outdoor", "Bieganko", 56);
-            Weekend newDay4 = new Weekend("Saturday", "Other", "Spraweczka", 56);
-            Weekend newDay5 = new Weekend("Saturday", "Outdoor", "Bieżace projekty", 56);
-
-            Workday newDay7 = new Workday("Monday", "Outdoor", "Programowanko", 56);
-            Workday newDay8 = new Workday("Tuesday", "Outdoor", "Programowanko", 56);
-            Workday newDay9 = new Workday("Thursday", "Outdoor", "Bieżące projekty", 56);
-            Workday newDay10 = new Workday("Wednesday", "Outdoor", "Bieganko", 56);
-            Workday newDay11 = new Workday("Friday", "Outdoor", "Spraweczka", 56);
-            Workday newDay12 = new Workday("Tuesday", "Outdoor", "Spraweczka", 56);
-
-            Container.activities.Add(newDay);
-            Container.activities.Add(newDay1);
-            Container.activities.Add(newDay2);
-            Container.activities.Add(newDay3);
-            Container.activities.Add(newDay4);
-            Container.activities.Add(newDay5);
-            Container.activities.Add(newDay7);
-            Container.activities.Add(newDay8);
-            Container.activities.Add(newDay9);
-            Container.activities.Add(newDay10);
-            Container.activities.Add(newDay11);
-            Container.activities.Add(newDay12);
-
-
-
+            
             foreach(var item in Enum.GetValues(typeof(Container.weekdays)))
             {
                 weekbox.Items.Add(item);
@@ -64,8 +35,6 @@ namespace zaliczenieNETPG
                 activityBox.Items.Add(item);
             }
         }
-        
-        
         
         
 
@@ -116,6 +85,52 @@ namespace zaliczenieNETPG
             }
 
             
+        }
+
+        private void TestEvent(object sender, RoutedEventArgs e)
+        {
+            //testing
+            Weekend newDay = new Weekend("Saturday", "Outdoor", "Programming", 56);
+            Weekend newDay1 = new Weekend("Sunday", "Project", "Programming", 63);
+            Weekend newDay2 = new Weekend("Saturday", "Outdoor", "Running", 56);
+            Weekend newDay3 = new Weekend("Sunday", "Outdoor", "Running", 56);
+            Weekend newDay4 = new Weekend("Saturday", "Other", "Studies", 56);
+            Weekend newDay5 = new Weekend("Saturday", "Outdoor", "Studies Projects", 56);
+
+            Workday newDay6 = new Workday("Monday", "Outdoor", "Programming", 56);
+            Workday newDay7 = new Workday("Monday", "Outdoor", "Programming", 52);
+            Workday newDay8 = new Workday("Tuesday", "Outdoor", "Programming", 83);
+            Workday newDay81 = new Workday("Tuesday", "Outdoor", "Programming", 18);
+            Workday newDay9 = new Workday("Thursday", "Outdoor", "Studies Projects", 56);
+            Workday newDay91 = new Workday("Thursday", "Studying", "Studying", 56);
+            Workday newDay10 = new Workday("Wednesday", "Outdoor", "Running", 85);
+            Workday newDay101 = new Workday("Wednesday", "Studying", "Studying", 85);
+            Workday newDay11 = new Workday("Friday", "Outdoor", "Studies", 56);
+            Workday newDay112 = new Workday("Friday", "Outdoor", "Recent Projects", 56);
+            Workday newDay111 = new Workday("Friday", "Outdoor", "Partying woohoo!", 180);
+            Workday newDay12 = new Workday("Tuesday", "Outdoor", "Studies", 56);
+
+            Container.activities.Add(newDay);
+            Container.activities.Add(newDay1);
+            Container.activities.Add(newDay2);
+            Container.activities.Add(newDay3);
+            Container.activities.Add(newDay4);
+            Container.activities.Add(newDay5);
+            Container.activities.Add(newDay7);
+            Container.activities.Add(newDay8);
+            Container.activities.Add(newDay9);
+            Container.activities.Add(newDay10);
+            Container.activities.Add(newDay11);
+            Container.activities.Add(newDay12);
+            Container.activities.Add(newDay81);
+            Container.activities.Add(newDay91);
+            Container.activities.Add(newDay101);
+            Container.activities.Add(newDay111);
+            Container.activities.Add(newDay112);
+
+            MessageBox.Show("Done!");
+
+
         }
 
 

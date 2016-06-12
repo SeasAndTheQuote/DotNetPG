@@ -21,13 +21,31 @@ namespace zaliczenieNETPG
     public partial class TodaysWork : Window
     {
         private ObservableCollection<Weekday> todayTasks = new ObservableCollection<Weekday>();
+        private ObservableCollection<String> start = new ObservableCollection<string>();
         public TodaysWork()
         {
             InitializeComponent();
 
+            //tasksList.DataContext = todayTasks;
+
+            this.tasksList.ItemsSource = todayTasks;
+            this.buttons.ItemsSource = start;
+
             DateTime todayFullDate = DateTime.Today;
             DayOfWeek todayDOW = todayFullDate.DayOfWeek;
             string todayDayOfTheWeek = todayDOW.ToString();
+
+            foreach(Weekday x in Container.activities)
+            {
+                if (x.day == todayDayOfTheWeek)
+                {
+                    todayTasks.Add(x);
+                    start.Add("Start");
+                }
+                
+            }
+
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -37,6 +55,8 @@ namespace zaliczenieNETPG
                 MessageBox.Show(x.name, "ERROR", MessageBoxButton.OK);
             }
         }
+
+
 
 
     }
