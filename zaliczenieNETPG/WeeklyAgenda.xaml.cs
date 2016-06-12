@@ -25,6 +25,7 @@ namespace zaliczenieNETPG
         {
             InitializeComponent();
 
+
             for (int i = 0; i < 7; i++)
             {
                 fullWeek[i] = new ObservableCollection<String>();

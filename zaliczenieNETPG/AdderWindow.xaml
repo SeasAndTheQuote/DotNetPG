@@ -8,11 +8,12 @@
         <TextBox x:Name="activity" 
                  HorizontalAlignment="Left" 
                  Height="30" 
-                 TextWrapping="Wrap" 
+                 TextWrapping="NoWrap" 
                  VerticalAlignment="Top" 
                  Width="120" 
                  Margin="283,37,0,0" 
-                 FontSize="18"/>
+                 FontSize="18"
+                 MaxLines="1"/>
 
         <ComboBox x:Name="weekbox" 
                   HorizontalAlignment="Left"
@@ -22,13 +23,15 @@
                   FontSize="18"
                   Height="30"/>
 
-        <TextBox x:Name="duration" HorizontalAlignment="Left"
+        <TextBox x:Name="duration" 
+                 HorizontalAlignment="Left"
                  Height="30"
-                 TextWrapping="Wrap"
+                 TextWrapping="NoWrap"
                  VerticalAlignment="Top"
                  Width="120" 
                  Margin="283,145,0,0" 
-                 FontSize="18"/>
+                 FontSize="18"
+                 MaxLines="1"/>
         
         <Label Content="Activity type" 
         	    HorizontalAlignment="Left"

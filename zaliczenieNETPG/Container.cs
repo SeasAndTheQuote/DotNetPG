@@ -20,6 +20,13 @@ namespace zaliczenieNETPG
             Saturday,
             Sunday
         }
+
+        /*private void getTodayDate()
+         *{
+         * if(last time was sunday && now is monday)
+         * reset all time remainings
+         * }
+         */
     }
 
 }
