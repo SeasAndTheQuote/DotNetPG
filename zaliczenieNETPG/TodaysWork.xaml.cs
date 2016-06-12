@@ -21,12 +21,10 @@ namespace zaliczenieNETPG
     public partial class TodaysWork : Window
     {
         private ObservableCollection<Weekday> todayTasks = new ObservableCollection<Weekday>();
-        private ObservableCollection<String> start = new ObservableCollection<string>();
+        private ObservableCollection<String> start = new ObservableCollection<string>();    //bloody hell I'm so sorry
         public TodaysWork()
         {
             InitializeComponent();
-
-            //tasksList.DataContext = todayTasks;
 
             this.tasksList.ItemsSource = todayTasks;
             this.buttons.ItemsSource = start;
@@ -50,11 +48,15 @@ namespace zaliczenieNETPG
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            foreach (Weekday x in Container.activities)
-            {
-                MessageBox.Show(x.name, "ERROR", MessageBoxButton.OK);
-            }
+            Application curApp = Application.Current;
+            curApp.Shutdown();
         }
+
+        private void DoubleClick(object sender, RoutedEventArgs e)  //TODO!
+        {
+            MessageBox.Show("Being short on time, i didn't manage to finish this one part of app :(\nBut well, there we go, what is left is to do the countdown, all but this works\nIt is set as TODO so at least I know a clear direction for further development!", "Darn it!", MessageBoxButton.OK);
+        }
+
 
 
 

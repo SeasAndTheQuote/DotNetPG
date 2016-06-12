@@ -15,7 +15,7 @@
                 <ColumnDefinition Width="1.5*"/>
                 <ColumnDefinition Width="0.7*"/>
             </Grid.ColumnDefinitions>
-            <ListView Name="tasksList" FontSize="18" ItemsSource="{Binding}" DataContext="{Binding}" HorizontalAlignment="Left" Height="348" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="384" >
+            <ListView Name="tasksList" FontSize="18" ItemsSource="{Binding}" DataContext="{Binding}" HorizontalAlignment="Left" Height="337" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="384" >
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Width="250" Header="Tasks" DisplayMemberBinding="{Binding name}"/>
@@ -24,13 +24,14 @@
                 </ListView.View>
             </ListView>
 
-            <ListView Name="buttons" FontSize="18" HorizontalAlignment="Center" Height="348" VerticalAlignment="Top" Width="60" Grid.Column="2">
+            <ListView Name="buttons" MouseDoubleClick="DoubleClick" FontSize="18" HorizontalAlignment="Center" Height="337" VerticalAlignment="Top" Width="60" Grid.Column="2">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header=" "/>
                     </GridView>
                 </ListView.View>
             </ListView>
+            <Button Content="Exit" FontSize="25"  Grid.Column="1" HorizontalAlignment="Left" Margin="64,342,0,0" VerticalAlignment="Top" Width="114" Grid.ColumnSpan="2" Height="37" Click="Button_Click"/>
 
         </Grid>
 
